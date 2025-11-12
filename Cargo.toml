@@ -1,0 +1,8 @@
+[workspace]
+members = [
+    "clob-client-rust",
+    "builder-relayer-client-rust",
+    "builder_signing_sdk_rs",
+    "order_utils_rs",
+]
+resolver = "3"
