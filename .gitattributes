@@ -1,0 +1,15 @@
+# Files and folders excluded from export artifacts (used by git archive)
+# The mirror workflow uses `git archive | tar -x` to build the public tree,
+# so anything marked with export-ignore here will NOT appear in the public repo.
+
+# Exclude GitHub workflows and CI
+.github export-ignore
+
+# Exclude VCS ignore files
+.gitignore export-ignore
+
+# Add more lines as needed, e.g.:
+# docs/internal/ export-ignore
+# scripts/private/ export-ignore
+# *.secret export-ignore
+scripts/ export-ignore
